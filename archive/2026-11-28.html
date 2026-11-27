@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>뉴스 브리핑 · 2026년 11월 28일 토요일</title>
+  <meta name="description" content="국내 주요 신문·방송 메인 헤드라인 브리핑">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #f3eee4;
+      --card: #fbf8f1;
+      --ink: #1c1917;
+      --muted: #5f574c;
+      --rule: #d7d0c3;
+      --accent: #8b1e2d;
+      --chip: #efe6d4;
+      --fail: #9a3412;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Noto Sans KR", sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    a { color: inherit; }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 28px 18px 64px; }
+    .mast {
+      border-top: 3px solid var(--ink);
+      border-bottom: 1px solid var(--ink);
+      padding: 18px 0 16px;
+      text-align: center;
+    }
+    .kicker {
+      letter-spacing: .22em;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--accent);
+      text-transform: uppercase;
+    }
+    .mast h1 {
+      font-family: "Noto Serif KR", serif;
+      font-size: clamp(32px, 7vw, 52px);
+      font-weight: 700;
+      letter-spacing: -.03em;
+      line-height: 1.15;
+      margin: 6px 0 8px;
+    }
+    .meta { color: var(--muted); font-size: 14px; }
+    .meta strong { color: var(--ink); font-weight: 600; }
+    .stats {
+      display: flex; justify-content: center; gap: 18px; flex-wrap: wrap;
+      margin-top: 10px; font-size: 13px; color: var(--muted);
+    }
+    h2 {
+      font-family: "Noto Serif KR", serif;
+      font-size: 22px;
+      margin: 36px 0 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--ink);
+    }
+    .hl-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    .hl {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 12px;
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 12px;
+      padding: 16px 16px 14px;
+    }
+    .hl-num {
+      font-family: "Noto Serif KR", serif;
+      color: var(--accent);
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    .hl h3 { font-size: 17px; line-height: 1.45; margin-bottom: 4px; font-weight: 700; }
+    .hl p { font-size: 14.5px; color: #3f3a34; }
+    .note { font-size: 13px; color: var(--muted); margin: -4px 0 14px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+    .chip {
+      background: var(--chip);
+      border-radius: 999px;
+      padding: 2px 9px;
+      font-size: 11.5px;
+      color: #4a4338;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 14px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 12px;
+      padding: 14px 16px 16px;
+    }
+    .card header {
+      display: flex; justify-content: space-between; align-items: baseline;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 8px; margin-bottom: 10px;
+    }
+    .paper {
+      font-family: "Noto Serif KR", serif;
+      font-weight: 700;
+      font-size: 18px;
+      text-decoration: none;
+    }
+    .paper:hover { color: var(--accent); }
+    .count, .badge { font-size: 12px; color: var(--muted); }
+    .badge { color: var(--fail); font-weight: 600; }
+    .fail { opacity: .9; }
+    .fail-note { font-size: 13px; color: var(--muted); }
+    .card ol { list-style: none; counter-reset: h; }
+    .card li {
+      counter-increment: h;
+      padding: 8px 0 8px 26px;
+      position: relative;
+      border-top: 1px solid #eee6d8;
+      font-size: 14.5px;
+      line-height: 1.5;
+    }
+    .card li:first-child { border-top: 0; padding-top: 2px; }
+    .card li::before {
+      content: counter(h);
+      position: absolute; left: 0; top: 9px;
+      font-family: "Noto Serif KR", serif;
+      font-size: 13px; color: var(--accent); font-weight: 700;
+    }
+    .card li:first-child::before { top: 3px; }
+    .card a { text-decoration: none; }
+    .card a:hover { text-decoration: underline; text-underline-offset: 3px; }
+    .archives { display: flex; flex-wrap: wrap; gap: 8px; }
+    .arch {
+      display: inline-block;
+      padding: 4px 10px;
+      border: 1px solid var(--rule);
+      border-radius: 999px;
+      font-size: 13px;
+      text-decoration: none;
+      color: var(--muted);
+    }
+    .arch.current, .arch:hover { border-color: var(--ink); color: var(--ink); }
+    footer {
+      margin-top: 48px;
+      padding-top: 16px;
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+      font-size: 12.5px;
+    }
+    footer p + p { margin-top: 6px; }
+    .back { margin-bottom: 10px; }
+    .back a { color: var(--accent); }
+    @media (max-width: 560px) {
+      .wrap { padding: 18px 14px 48px; }
+      .hl { grid-template-columns: 36px 1fr; padding: 14px; }
+      .card li { font-size: 15px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="back"><a href="../">오늘 브리핑으로</a></p>
+    <header class="mast">
+      <div class="kicker">KOREA NEWS BRIEFING</div>
+      <h1>뉴스 브리핑</h1>
+      <p class="meta"><strong>2026년 11월 28일 토요일</strong> · 생성 07:33 (Asia/Seoul)</p>
+      <div class="stats">
+        <span>언론사 19/19곳</span>
+        <span>아카이브 페이지</span>
+      </div>
+    </header>
+
+    <section>
+      <h2>오늘의 핵심 5줄</h2>
+      <p class="note">각 이슈를 다룬 언론사는 해당사 네이버 메인 뉴스 카드 기준입니다. 아래 카드에는 그중 상위 5건만 보여 줍니다.</p>
+      <ol class="hl-list">
+        <li class="hl">
+              <div class="hl-num">01</div>
+              <div class="hl-body">
+                <h3>조희대 탄핵·판사 반발 논란 지속</h3>
+                <p>조희대 대법원장 탄핵 논란과 관련해 판사들의 반발, 여론 조사, 특검 후보 입장 등이 보도됐다.</p>
+                <div class="chips"><span class="chip">경향신문</span><span class="chip">한국일보</span><span class="chip">서울신문</span><span class="chip">JTBC</span></div>
+              </div>
+            </li>
+      </ol>
+    </section>
+
+    <section class="sec">
+              <h2>종합일간지</h2>
+              <div class="grid"><article class="card">
+                  <header><a class="paper" href="https://www.chosun.com/">조선일보</a>
+                  <span class="count">5건</span></header>
+                  <ol><li><a href="https://www.chosun.com/politics/assembly/2026/11/28/XAUFIVHQMNGIHOJ47ECNQQLC2E/" target="_blank" rel="noopener">미래기금 끌어다 곳곳 예산 증액… 與서도 “정부 흥청망청” 질타</a></li><li><a href="https://www.chosun.com/international/international_general/2026/11/28/SSGWJBIZXVFJXMZ4HESZ2ZBK5I/" target="_blank" rel="noopener">트럼프 말 못 믿겠다는 나토… 5國, 장갑차 430대 구매 나서</a></li><li><a href="https://www.chosun.com/opinion/column/2026/11/27/JH7WYXUU6RDNXENWZK5A4ZSRO4/" target="_blank" rel="noopener">[박정훈 칼럼] 총 안 든 친위 쿠데타 내란</a></li><li><a href="https://www.chosun.com/economy/tech_it/2026/11/28/B3S6DMM3ABEOZJJKVPHZQBWQJM/" target="_blank" rel="noopener">화웨이 “美제재 덕에 기술 자립”… 中 ‘AI 반도체 3종 세트’ 가속도</a></li><li><a href="https://www.chosun.com/national/regional/chungcheong/2026/11/27/GAAT2ONV55DJZLZPHGYYYO2TQU/" target="_blank" rel="noopener">담임 선생님 머리채 잡은 초등생… 부모는 “학교가 영상 유출” 진정</a></li></ol>
+                </article><article class="card">
+                  <header><a class="paper" href="https://www.joongang.co.kr/">중앙일보</a>
+                  <span class="count">5건</span></header>
+                  <ol><li><a href="https://www.joongang.co.kr/article/25482743" target="_blank" rel="noopener">반포 큰손들이 먼저 움직인다…주식 접고 택한 투자법</a></li><li><a href="https://www.joongang.co.kr/article/25482662" target="_blank" rel="noopener">일 잘하는 현역 국회의원 2위 서영교, 3위 정청래…1위는?</a></li><li><a href="https://www.joongang.co.kr/article/25482747" target="_blank" rel="noopener">“아파트 특공도 받는데…” 세종 통근버스 5년 만에 부활 논란</a></li><li><a href="https://www.joongang.co.kr/article/25482735" target="_blank" rel="noopener">“302호 아가씨가 이상해요” 사흘만에 난리난 그 건물, 왜</a></li><li><a href="https://www.joongang.co.kr/article/25482737" target="_blank" rel="noopener">김정은 표창 외교관 “벽에 머리 찧겠다!”…필사의 공항 탈북</a></li></ol>
+                </article><article class="card">
+                  <header><a class="paper" href="https://www.donga.com/">동아일보</a>
+                  <span class="count">5건</span></header>
+                  <ol><li><a href="https://www.donga.com/news/Economy/article/all/20261127/135106378/2" target="_blank" rel="noopener">주담대 5% - 마통 7%… 가계 덮친 ‘눈덩이 금리’</a></li><li><a href="https://www.donga.com/news/Politics/article/all/20261127/135106481/2" target="_blank" rel="noopener">최민희 징계 확정땐 차기 총선 출마 못해… 친청 “김민석도 징계”</a></li><li><a href="https://www.donga.com/news/Politics/article/all/20261127/135106477/2" target="_blank" rel="noopener">박홍근 “법사위가 상원이냐”… 민주당 장관이 與의원 이례적 비판</a></li><li><a href="https://www.donga.com/news/Politics/article/all/20261127/135106473/2" target="_blank" rel="noopener">이달 급여 1.9억 실수령 강금실… 재산 총액 2억6495만원 신고</a></li><li><a href="https://www.donga.com/news/Society/article/all/20261127/135106374/2" target="_blank" rel="noopener">‘정년 65세 연장’ 與중재안 노사 합의 불발</a></li></ol>
+                </article><article class="card">
+                  <header><a class="paper" href="https://www.hani.co.kr/">한겨레</a>
+                  <span class="count">5건</span></header>
+                  <ol><li><a href="https://www.hani.co.kr/arti/politics/politics_general/1289494.html" target="_blank" rel="noopener">최민희 ‘당원 정지 2년’ 중징계에 “수용 하기 어렵다”…민주 내홍 격화</a></li><li><a href="https://www.hani.co.kr/arti/society/society_general/1289501.html" target="_blank" rel="noopener">인터넷우체국 등기우편 고객정보 유출…하루치만 11만3천명 확인</a></li><li><a href="https://www.hani.co.kr/arti/international/international_general/1289500.html" target="_blank" rel="noopener">젤렌스키, 푸틴 ‘친구’라 부른 트럼프에 “히틀러 친구라는 것과 같다”</a></li><li><a href="https://www.hani.co.kr/arti/politics/politics_general/1289499.html" target="_blank" rel="noopener">법사위 당정 충돌 왜…박홍근 “상원이냐” vs 서영교 “이런 장관 처음”</a></li><li><a href="https://www.hani.co.kr/arti/politics/assembly/1289406.html" target="_blank" rel="noopener">장동혁 “한동훈, IP주소 까면 돼…복당해도 다시 제명”</a></li></ol>
+                </article><article class="card">
+                  <header><a class="paper" href="https://www.khan.co.kr/">경향신문</a>
+                  <span class="count">5건</span></header>
+                  <ol><li><a href="https://www.khan.co.kr/article/202611280600001" target="_blank" rel="noopener">‘서울의 밤’, 내란 혐의를 판결하는 판사들의 단체 관람을 권합니다[위근우의 리플레이]</a></li><li><a href="https://www.khan.co.kr/article/202611280600005" target="_blank" rel="noopener">‘모시고’ 아닌 ‘함께’…50대 딸과 80대 엄마의 여행법</a></li><li><a href="https://www.khan.co.kr/article/202611280700001" target="_blank" rel="noopener">1년 만에 꺼낸 패딩에서 ‘기름 쩐내’…담배·고깃집 냄새 뒤섞였다면 ‘이렇게’</a></li><li><a href="https://www.khan.co.kr/article/202611280700005" target="_blank" rel="noopener">충남 논산시 강경, ‘젓갈백화점’에 입 호강…역사와 문학 스민 풍경에 눈 호강</a></li><li><a href="https://www.khan.co.kr/article/202611271607001" target="_blank" rel="noopener">보수정당 출신 허은아 비서관, 청와대 사직…이 대통령, 아쉬움 표해</a></li></ol>
+                </article><article class="card">
+                  <header><a class="paper" href="https://www.hankookilbo.com/">한국일보</a>
+                  <span class="count">5건</span></header>
+                  <ol><li><a href="https://www.hankookilbo.com/news/article/A2026112717430005924?did=NA" target="_blank" rel="noopener">최민희 중징계에 김민석 겨눈 정청래… 與 계파갈등 기폭제 되나</a></li><li><a href="https://www.hankookilbo.com/news/article/A2026112710180003932?did=NA" target="_blank" rel="noopener">[단독] 거센 비판에도 미래대응기금 속도전… 104조 운용할 전담 조직 신설</a></li><li><a href="https://www.hankookilbo.com/news/article/A2026112714590003844?did=NA" target="_blank" rel="noopener">[단독] 與 추천 이임성 특검 후보… 李 지사 시절 경기도 고문변호사였다</a></li><li><a href="https://www.hankookilbo.com/news/article/A2026112720240001028?did=NA" target="_blank" rel="noopener">국제변호사협회도 &quot;조희대 탄핵 우려&quot;… &quot;판결 이견이 파면 사유 돼선 안 돼&quot;</a></li><li><a href="https://www.hankookilbo.com/news/article/A2026112715330004401?did=NA" target="_blank" rel="noopener">&quot;소나무재선충 9㎞ 날아간다... 과도한 벌채 오히려 독&quot;</a></li></ol>
+                </article><article class="card">
+                  <header><a class="paper" href="https://www.kmib.co.kr/">국민일보</a>
+                  <span class="count">5건</span></header>
+                  <ol><li><a href="https://www.kmib.co.kr/article/20261128500005" target="_blank" rel="noopener">목포서 심정지 6개월 영아…병원 찾아 서울로 헬기 이송</a></li><li><a href="https://www.kmib.co.kr/article/20261127500841" target="_blank" rel="noopener">‘당원자격정지 2년’ 징계에 최민희 “수용 어려워…재심 신청”</a></li><li><a href="https://www.kmib.co.kr/article/20261127500600" target="_blank" rel="noopener">“비상계엄은 내란” 57%…“한덕수 판결 잘못됐다”46%</a></li><li><a href="https://www.kmib.co.kr/article/20261127500629" target="_blank" rel="noopener">‘제자 성폭행’ 의혹 남경주 “성관계 시도 인정·위력은 부인”</a></li><li><a href="https://www.kmib.co.kr/article/20261127500850" target="_blank" rel="noopener">與정년연장특위, 합의안 도출 실패</a></li></ol>
+                </article><article class="card">
+                  <header><a class="paper" href="https://www.seoul.co.kr/">서울신문</a>
+                  <span class="count">5건</span></header>
+                  <ol><li><a href="https://www.seoul.co.kr/news/society/accident/2026/11/28/20261128500003?wlog_tag3=naver" target="_blank" rel="noopener">사법독립 흔들릴라…국제변협까지 나선 ‘조희대 탄핵 추진’ 경고</a></li><li><a href="https://www.seoul.co.kr/news/politics/2026/11/27/20261127500326?wlog_tag3=naver" target="_blank" rel="noopener">최민희 ‘당원권 2년 정지’ 징계에 계파 갈등 벼랑끝(종합)</a></li><li><a href="https://www.seoul.co.kr/news/international/topic-global/2026/11/27/20261127500329?wlog_tag3=naver" target="_blank" rel="noopener">CEO 사내 불륜설 또 터졌다…“女직원 임신시켜 결국 중절수술” 충격 [월드픽]</a></li><li><a href="https://www.seoul.co.kr/news/international/europe/2026/11/26/20261126500242?wlog_tag3=naver" target="_blank" rel="noopener">변전소 지으려고 땅 팠더니 2000년 전 은화가 ‘와르르’…땅밑 겨우 40㎝였다 [월드픽]</a></li><li><a href="https://nownews.seoul.co.kr/news/newsView.php?id=20261127601014&amp;wlog_tag3=naver" target="_blank" rel="noopener">“중국 AI는 끝났다”…트럼프 규제에 ‘다 막힌’ 中 연구원들의 한탄 [핫이슈]</a></li></ol>
+                </article><article class="card">
+                  <header><a class="paper" href="https://www.segye.com/">세계일보</a>
+                  <span class="count">5건</span></header>
+                  <ol><li><a href="https://www.segye.com/newsView/20261128500798?OutUrl=naver" target="_blank" rel="noopener">내 퇴직연금 수익률 6%대인데…국민연금에 맡기면 19% 진짜 될까?</a></li><li><a href="https://www.segye.com/newsView/20261128500768?OutUrl=naver" target="_blank" rel="noopener">소화제 먹어도 속 더부룩…살 빠지고 변에 기름기 돌면 췌장암 신호?</a></li><li><a href="https://www.segye.com/newsView/20261128501303?OutUrl=naver" target="_blank" rel="noopener">‘검찰총장(공소청장)’ 구인난 [김태훈의 의미 또는 재미]</a></li><li><a href="https://www.segye.com/newsView/20261128500785?OutUrl=naver" target="_blank" rel="noopener">하루 두 번 양치하는데…사망 위험 23% 낮은 사람들의 ‘뜻밖의 습관’</a></li><li><a href="https://www.segye.com/newsView/20261127508823?OutUrl=naver" target="_blank" rel="noopener">마통 금리 7% 돌파... 매서워진 고금리 한파에 ‘영끌족’ 어쩌나</a></li></ol>
+                </article><article class="card">
+                  <header><a class="paper" href="https://www.munhwa.com/">문화일보</a>
+                  <span class="count">5건</span></header>
+                  <ol><li><a href="https://www.munhwa.com/article/11634723?ref=naver" target="_blank" rel="noopener">[속보]李대통령 “김용범에 자본시장 개혁 전권 부여…핵심 국정과제”</a></li><li><a href="https://www.munhwa.com/article/11634718?ref=naver" target="_blank" rel="noopener">“한동훈 만나 사과하겠다”…‘조작 징계’ 폭로 국힘 전 윤리위원들 제안</a></li><li><a href="https://www.munhwa.com/article/11634731?ref=naver" target="_blank" rel="noopener">이 대통령, 최휘영 ‘기습 교체 통보’ 보도에 “명예 훼손하는 중대 문제…정정해야”</a></li><li><a href="https://www.munhwa.com/article/11634712?ref=naver" target="_blank" rel="noopener">“이렇게 사람 많은 건 처음” 지하철 1·3·4호선 퇴근길 대란…철도노조 준법투쟁에 시민 불편</a></li><li><a href="https://www.munhwa.com/article/11634651?ref=naver" target="_blank" rel="noopener">“여보, 내년엔 정말 어쩌지”…종부세 과세 ‘14억’으로 올라도 세금 부담 더 커질듯</a></li></ol>
+                </article></div>
+            </section><section class="sec">
+              <h2>경제지</h2>
+              <div class="grid"><article class="card">
+                  <header><a class="paper" href="https://www.mk.co.kr/">매일경제</a>
+                  <span class="count">5건</span></header>
+                  <ol><li><a href="https://www.mk.co.kr/article/12220406" target="_blank" rel="noopener">'베이비부머' 1973년생부터 정년 65세… 기업 &quot;청년 채용 위축&quot;</a></li><li><a href="https://www.mk.co.kr/article/12219964" target="_blank" rel="noopener">90% 땡처리 끝에, 수천명 직원들은 눈물만...점포 문 또 닫은 홈플러스</a></li><li><a href="https://www.mk.co.kr/article/12220584" target="_blank" rel="noopener">“오래 기다렸죠?” 돌아온 외국인…삼전닉스 내다팔더니 ‘이것’ 샀다</a></li><li><a href="https://www.mk.co.kr/article/12220603" target="_blank" rel="noopener">한국서 5% 뛴 SK하이닉스, 미국선 7%대 급등…나스닥도 2.31%↑</a></li><li><a href="https://www.mk.co.kr/article/12220585" target="_blank" rel="noopener">“이걸 한국에 내주지”…중국의, 중국을 위한, 중국에 의한 아이오닉 어떻길래</a></li></ol>
+                </article><article class="card">
+                  <header><a class="paper" href="https://www.hankyung.com/">한국경제</a>
+                  <span class="count">5건</span></header>
+                  <ol><li><a href="https://www.hankyung.com/article/2026112753771" target="_blank" rel="noopener">&quot;엄마, 학교에서 밥 안 준대&quot;…11월만 되면 대체 왜 이러나</a></li><li><a href="https://www.hankyung.com/article/2026112754596" target="_blank" rel="noopener">&quot;이자·배당 2000만원 미만인데&quot;…은퇴자 건보료 고지서 '비상' [고정삼의 절세GPT]</a></li><li><a href="https://www.hankyung.com/article/202611275556i" target="_blank" rel="noopener">&quot;한 알에 커피 한잔 값인데&quot;…편의점서 인기 폭발한 과일 [프라이스&amp;]</a></li><li><a href="https://www.hankyung.com/article/2026112753311" target="_blank" rel="noopener">한국 수배자 알아서 잡아왔다…'도피 천국' 이 나라의 반전</a></li><li><a href="https://www.hankyung.com/article/202611262993i" target="_blank" rel="noopener">&quot;제일 말도 안 되는 엉터리 사업&quot;…3조원 예산에 여야 쓴소리 [여의도는 지금]</a></li></ol>
+                </article><article class="card">
+                  <header><a class="paper" href="https://www.sedaily.com/">서울경제</a>
+                  <span class="count">5건</span></header>
+                  <ol><li><a href="https://www.sedaily.com/article/20120029?ref=naver" target="_blank" rel="noopener">한국서 아낀 돈, 일본에서 다 썼다...해외 결제액 역대 최대 [Pick코노미]</a></li><li><a href="https://www.sedaily.com/article/20120083?ref=naver" target="_blank" rel="noopener">“지금 경찰이랑 통화 중이에요”…옆에서 듣던 ‘진짜’ 경찰, 700만원 지켜냈다</a></li><li><a href="https://www.sedaily.com/article/20119941?ref=naver" target="_blank" rel="noopener">롱패딩 입고 나왔다가 “너무 더워”…이상하다 했더니 전세계 ‘따뜻한 11월’</a></li><li><a href="https://www.sedaily.com/article/20120092?ref=naver" target="_blank" rel="noopener">“손톱에 생긴 이게 뭐지?” 그냥 넘겼다간 큰일…‘심장 건강 적신호’ 경고 [헬시타임]</a></li><li><a href="https://www.sedaily.com/article/20120054?ref=naver" target="_blank" rel="noopener">美 대법원이 막은 관세…301조 뒷문으로 복귀[글로벌 모닝 브리핑]</a></li></ol>
+                </article><article class="card">
+                  <header><a class="paper" href="https://www.mt.co.kr/">머니투데이</a>
+                  <span class="count">5건</span></header>
+                  <ol><li><a href="https://www.mt.co.kr/economy/2026/11/28/2026112415464266619" target="_blank" rel="noopener">소 한 마리에 토시살 겨우 970g…특수부위는 왜 비쌀까</a></li><li><a href="https://www.mt.co.kr/society/2026/11/28/2026112610242350011" target="_blank" rel="noopener">서울 대학로 한복판서 백골 28구…18년째 풀리지 않는 미스터리 [뉴스속오늘]</a></li><li><a href="https://www.mt.co.kr/economy/2026/11/27/2026112716073640686" target="_blank" rel="noopener">&quot;한달 생활비 벌어&quot;, &quot;1.6억 들어와&quot;…삼전 주주들 배당 인증 릴레이</a></li><li><a href="https://www.mt.co.kr/society/2026/11/28/2026112723252995740" target="_blank" rel="noopener">28억 이촌동 아파트 사는데 '월수입 120만원'…71세 가장의 은퇴 잔혹사</a></li><li><a href="https://www.mt.co.kr/society/2026/11/28/2026112723341520109" target="_blank" rel="noopener">&quot;주식 팔아 집 사려던 수요 사라져&quot;…서울 부동산 시장이 멈춘 이유</a></li></ol>
+                </article></div>
+            </section><section class="sec">
+              <h2>통신·방송</h2>
+              <div class="grid"><article class="card">
+                  <header><a class="paper" href="https://www.yna.co.kr/">연합뉴스</a>
+                  <span class="count">5건</span></header>
+                  <ol><li><a href="https://www.yna.co.kr/view/AKR20261127152900530?input=1195m" target="_blank" rel="noopener">수능판 파파라치 극성 부리나…'신고 포상금 5억'의 명암</a></li><li><a href="https://www.yna.co.kr/view/AKR20261128002400072?input=1195m" target="_blank" rel="noopener">'젠슨황 불륜 상대' 연계 中시설서 엔비디아 최첨단 칩 발견</a></li><li><a href="https://www.yna.co.kr/view/AKR20261127099900065?input=1195m" target="_blank" rel="noopener">인천공항 출국하던 전역군인 여행가방서 또 공포탄 적발</a></li><li><a href="https://www.yna.co.kr/view/AKR20261127087900530?input=1195m" target="_blank" rel="noopener">내년 저소득층 국민연금 보험료 지원 대상 98만5천명…2년새 5배로</a></li><li><a href="https://www.yna.co.kr/view/AKR20261127166700004?input=1195m" target="_blank" rel="noopener">&quot;땅값 10배 뛴다&quot;며 200억 사기…기획부동산 회장 1심 징역 12년</a></li></ol>
+                </article><article class="card">
+                  <header><a class="paper" href="https://news.kbs.co.kr/">KBS</a>
+                  <span class="count">5건</span></header>
+                  <ol><li><a href="https://news.kbs.co.kr/news/pc/view/view.do?ncd=8725007&amp;ref=A" target="_blank" rel="noopener">“젠슨 황 불륜 상대와 연계된 중국 데이터센터에 엔비디아 블랙웰 설치”</a></li><li><a href="https://news.kbs.co.kr/news/pc/view/view.do?ncd=8725010&amp;ref=A" target="_blank" rel="noopener">트럼프 “이란전, 언제든 원할때 끝내…곡괭이산 타격할 것”</a></li><li><a href="https://news.kbs.co.kr/news/pc/view/view.do?ncd=8725006&amp;ref=A" target="_blank" rel="noopener">다회용기 쓰기 딱 좋은데…장례식장 10곳 중 9곳은 왜 못 바꿀까 [취재후]</a></li><li><a href="https://news.kbs.co.kr/news/pc/view/view.do?ncd=8724776&amp;ref=A" target="_blank" rel="noopener">‘울릉도 표류’ 북한 주민 6명 송환…‘잔류’ 밝힌 1명 남아</a></li><li><a href="https://news.kbs.co.kr/news/pc/view/view.do?ncd=8724775&amp;ref=A" target="_blank" rel="noopener">‘슈퍼 엘니뇨’ 비상…시간당 5cm 눈 오면 재난문자</a></li></ol>
+                </article><article class="card">
+                  <header><a class="paper" href="https://imnews.imbc.com/">MBC</a>
+                  <span class="count">5건</span></header>
+                  <ol><li><a href="https://imnews.imbc.com/replay/2026/nwtoday/article/6869235_37012.html" target="_blank" rel="noopener">&quot;2037년까지 정년 65세로&quot;‥노사 &quot;수용 불가&quot;</a></li><li><a href="https://imnews.imbc.com/replay/2026/nwdesk/article/6869185_37004.html" target="_blank" rel="noopener">머스크도 &quot;칩 좀 더&quot;‥美 과잉생산 지적했지만 현실은 초과수요</a></li><li><a href="https://imnews.imbc.com/replay/2026/nwdesk/article/6869192_37004.html" target="_blank" rel="noopener">[단독] '검찰 내부문건'을 한동훈에?‥&quot;유출자 찾는다&quot; 압수수색</a></li><li><a href="https://imnews.imbc.com/replay/2026/nwdesk/article/6869189_37004.html" target="_blank" rel="noopener">&quot;12.3 계엄은 내란&quot; 2년 새 14%p 감소‥'내란 부정론' 때문?</a></li><li><a href="https://imnews.imbc.com/replay/2026/nwdesk/article/6869187_37004.html" target="_blank" rel="noopener">&quot;갱신권도 다 썼는데 갈 곳이 없다&quot;‥내년 '4년 전세' 만기만 5만 5천 건?</a></li></ol>
+                </article><article class="card">
+                  <header><a class="paper" href="https://news.sbs.co.kr/">SBS</a>
+                  <span class="count">5건</span></header>
+                  <ol><li><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008867322" target="_blank" rel="noopener">[단독] &quot;직무 관련성 없다&quot;던 홍익표…법원 판단은 정반대? (풀영상)</a></li><li><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008867319" target="_blank" rel="noopener">다음 총선 길 막히나…'당원권 2년 정지' 배경은 (풀영상)</a></li><li><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008867473" target="_blank" rel="noopener">&quot;엔비디아 AI 칩 중국 반입 확인…앨리스 황 연계 시설&quot;</a></li><li><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008867286" target="_blank" rel="noopener">&quot;판다 못 보내준다…교훈 얻길&quot; 돌연 입장 바꾼 중국</a></li><li><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1008867287" target="_blank" rel="noopener">&quot;나도 당했다&quot; 쏟아진 제보…국악계 성폭력 파문</a></li></ol>
+                </article><article class="card">
+                  <header><a class="paper" href="https://news.jtbc.co.kr/">JTBC</a>
+                  <span class="count">5건</span></header>
+                  <ol><li><a href="https://news.jtbc.co.kr/article/NB12330266" target="_blank" rel="noopener">세계변호사협회도 조희대 탄핵 추진에 우려…&quot;위험한 선례&quot;</a></li><li><a href="https://news.jtbc.co.kr/article/NB12330208" target="_blank" rel="noopener">지적장애 딸이 성폭행당해 낳은 손주…할아버지 홀로 '피눈물'</a></li><li><a href="https://news.jtbc.co.kr/article/NB12330209" target="_blank" rel="noopener">[단독] 성폭행해놓고 &quot;사랑했다&quot;…회사는 범행 알고도 '쉬쉬'</a></li><li><a href="https://news.jtbc.co.kr/article/NB12330215" target="_blank" rel="noopener">'디즈니의 전설' 감춰진 민낯…&quot;직원과 혼외관계&quot; 폭로</a></li><li><a href="https://news.jtbc.co.kr/article/NB12330247" target="_blank" rel="noopener">하객만 40만명…인도 시골 마을 뒤집은 '정치인 딸 결혼식'</a></li></ol>
+                </article></div>
+            </section>
+
+    <section class="sec">
+      <h2>지난 브리핑</h2>
+      <div class="archives"><a class="arch current" href="#">2026-11-28</a><a class="arch" href="2026-11-27.html">2026-11-27</a><a class="arch" href="2026-11-26.html">2026-11-26</a></div>
+    </section>
+
+    <footer>
+      <p>출처: 각 언론사 네이버 언론사 홈의 메인 뉴스(편집 배치) 상위 5건. 링크는 언론사 원문입니다.</p>
+      <p>수집 실패한 언론사는 없습니다. 헤드라인은 수집 시각 기준이며, 이후 홈페이지 배치는 달라질 수 있습니다.</p>
+      <p>저장소 <a href="https://github.com/aihubos/news-briefing">aihubos/news-briefing</a></p>
+    </footer>
+  </div>
+</body>
+</html>
